@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/background_login"
+android:orientation="vertical">
+
+<LinearLayout android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/intro_part_1"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/intro_part_2"
+            android:scaleType="fitStart"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+<LinearLayout android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        android:orientation="vertical">
+
+        <View
+            style="@style/oritentation_vertical"
+            android:layout_weight="1.5"/>
+
+        <ImageView
+            android:src="@drawable/intro_part_head"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.9"
+            android:layout_gravity="center"/>
+
+        <View
+            style="@style/oritentation_vertical"
+            android:layout_weight="0.7"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+
+        <View
+            style="@style/oritentation_horizontal"
+            android:layout_weight="0.05"/>
+
+        <LinearLayout
+            style="@style/oritentation_horizontal"
+            android:layout_weight="0.9"
+            android:orientation="vertical">
+
+            <EditText
+                android:text=""
+                android:id="@+id/txtEmail"
+                android:textColor="#999999"
+                android:maxLines="1"
+                android:inputType="textEmailAddress"
+                style="@style/login_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:hint="@string/e_mail"/>
+
+            <View
+                style="@style/oritentation_vertical"
+                android:layout_weight="0.025"/>
+
+            <EditText
+                android:text=""
+                android:id="@+id/txtPass"
+                android:textColor="#999999"
+                style="@style/login_edittext"
+                android:inputType="textCapCharacters|textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:hint="@string/insert_your_code"/>
+
+            <View
+                style="@style/oritentation_vertical"
+                android:layout_weight="0.025"/>
+
+            <View
+                style="@style/oritentation_vertical"
+                android:layout_weight="0.025"/>
+
+            <LinearLayout
+                style="@style/oritentation_vertical"
+                android:layout_weight="0.1"
+                android:orientation="horizontal">
+                <View
+                    style="@style/oritentation_horizontal"
+                    android:layout_weight="0.04"/>
+                <Button
+                    android:id="@+id/btnLogin"
+                    style="@style/login_singin"
+                    android:text="Log In"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <View
+                    style="@style/oritentation_horizontal"
+                    android:layout_weight="0.04"/>
+            </LinearLayout>
+
+
+            <View
+                style="@style/oritentation_vertical"
+                android:layout_weight="0.025"/>
+
+            <Button
+                android:id="@+id/btnForgot"
+                android:textSize="@dimen/login_text_forgot"
+                android:onClick="forgotPassword"
+                android:background="@android:color/transparent"
+                android:text="Forgot your registration code?"
+                android:textColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/oritentation_horizontal"
+            android:layout_weight="0.05"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+    </View>
+
+</LinearLayout>
+
+<RelativeLayout
+    android:visibility="gone"
+    android:id="@+id/layoutShadow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:alpha="0.4"/>
+
+<iosco.app.utils.AVLoadingIndicatorView
+    android:id="@+id/loginLoadingIndicator"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    app:indicator="CubeTransition"
+    app:indicator_color="#F501C3"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true" />
+</RelativeLayout>

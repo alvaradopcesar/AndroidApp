@@ -1,0 +1,73 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/drawer_profile_height"
+    android:background="@drawable/drawer_part_1"
+    android:orientation="vertical">
+
+    <View
+        style="@style/oritentation_vertical"
+        android:layout_weight="0.1"/>
+
+    <LinearLayout
+        style="@style/oritentation_vertical"
+        android:layout_weight="0.6"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:orientation="horizontal">
+
+            <View
+                style="@style/oritentation_horizontal"
+                android:layout_weight="4"/>
+
+            <com.pkmmte.view.CircularImageView
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/imgHeaderPhoto"
+                android:src="@drawable/ico_profile"
+                android:scaleType="fitCenter"
+                app:border="true"
+                app:border_color="#fff"
+                app:border_width="2dp"
+                app:shadow="false" />
+
+            <ProgressBar
+                android:id="@+id/progressHeader"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:layout_marginLeft="30dp" />
+
+            <View
+                style="@style/oritentation_horizontal"
+                android:layout_weight="4"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:layout_marginTop="7dp"
+            android:layout_gravity="center"
+            android:gravity="center|top"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="@dimen/drawer_profile_text_size"
+            android:text=""
+            android:id="@+id/txtHeaderName" />
+
+        </LinearLayout>
+
+    <View
+        style="@style/oritentation_vertical"
+        android:layout_weight="0.2"/>
+
+</LinearLayout>

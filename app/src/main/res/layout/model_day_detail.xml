@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calendar_model_daydetail_height"
+        android:orientation="horizontal"
+        android:background="#F4F4F4">
+
+        <View
+            style="@style/oritentation_horizontal"
+            android:layout_weight="0.05"/>
+
+        <LinearLayout
+            style="@style/oritentation_horizontal"
+            android:layout_weight="0.94"
+            android:orientation="horizontal"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:src="@drawable/ico_agenda_clock"/>
+
+            <TextView
+                android:id="@+id/txtTimeEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:textColor="#666666"
+                android:textSize="@dimen/calendar_model_daydetail_time_size"
+                android:gravity="center|left"
+                android:text="09:00 - 10:00 AM"/>
+            <ImageView
+                android:id="@+id/imgCheckEvent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:src="@drawable/ic_check"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/oritentation_horizontal"
+            android:layout_weight="0.05"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fff">
+
+        <View
+            style="@style/oritentation_horizontal"
+            android:layout_weight="0.1"/>
+
+        <TextView
+            android:id="@+id/txtNameEvent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:layout_weight="0.9"
+            android:textSize="@dimen/calendar_model_daydetail_time_size"
+            android:text="Name"
+            android:gravity="center|left"
+            android:layout_centerVertical="true"/>
+
+     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#999"/>
+
+</LinearLayout>

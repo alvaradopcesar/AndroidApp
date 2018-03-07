@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#6E267A</color>
+    <color name="color_primary_dark">#7B1FA2</color>
+    <color name="color_accent">#9E9E9E</color>
+
+    <color name="color_1">#800088</color>
+    <color name="color_2">#F400C3</color>
+    <color name="color_3">#1674C2</color>
+    <color name="color_4">#333333</color>
+    <color name="color_5">#666666</color>
+    <color name="color_6">#cccccc</color>
+    <color name="color_7">#fff</color>
+
+    <color name="bar_color_1">#7C0064</color>
+    <color name="bar_color_2">#DD0084</color>
+    <color name="bar_color_3">#2C9DBB</color>
+    <color name="bar_color_4">#333333</color>
+
+    // profile
+
+    <color name="profile_head">#3399CC</color>
+    <color name="profile_text">#666666</color>
+
+    <color name="background_global">#fff</color>
+</resources>

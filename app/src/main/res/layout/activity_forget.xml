@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:orientation="vertical">
+
+    <LinearLayout android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5">
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/intro_part_1"
+                android:scaleType="fitXY"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/intro_part_2"
+                android:scaleType="fitStart"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.8"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/oritentation_vertical"
+                android:layout_weight="0.5"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"/>
+                <ImageView
+                    android:onClick="closeActivity"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/forget_x"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.025"/>
+            </LinearLayout>
+
+            <ImageView
+                android:src="@drawable/forget_part_1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <View
+                style="@style/oritentation_horizontal"
+                android:layout_weight="0.05"/>
+
+            <LinearLayout
+                style="@style/oritentation_horizontal"
+                android:layout_weight="0.9"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.05"/>
+
+                <View
+                    style="@style/oritentation_vertical"
+                    android:layout_weight="0.025"/>
+
+                <EditText
+                    android:textColor="#999999"
+                    android:id="@+id/txtPass"
+                    style="@style/login_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"
+                    android:hint="@string/e_mail"
+                    android:inputType="textEmailAddress"/>
+
+                <View
+                    style="@style/oritentation_vertical"
+                    android:layout_weight="0.025"/>
+
+                <View
+                    style="@style/oritentation_vertical"
+                    android:layout_weight="0.025"/>
+
+                <LinearLayout
+                    style="@style/oritentation_vertical"
+                    android:layout_weight="0.1"
+                    android:orientation="horizontal">
+                    <View
+                        style="@style/oritentation_horizontal"
+                        android:layout_weight="0.04"/>
+                    <Button
+                        android:id="@+id/btnLogin"
+                        style="@style/login_singin"
+                        android:text="Send"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+                    <View
+                        style="@style/oritentation_horizontal"
+                        android:layout_weight="0.04"/>
+                </LinearLayout>
+
+
+                <View
+                    style="@style/oritentation_vertical"
+                    android:layout_weight="0.025"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/oritentation_horizontal"
+                android:layout_weight="0.05"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+
+        </View>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/layoutShadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:alpha="0.4"/>
+
+    <iosco.app.utils.AVLoadingIndicatorView
+        android:id="@+id/loginLoadingIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:indicator="CubeTransition"
+        app:indicator_color="#F501C3"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

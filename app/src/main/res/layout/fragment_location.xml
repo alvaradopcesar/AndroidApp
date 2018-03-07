@@ -1,0 +1,285 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layoutLocationFloors"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/calendar_model_day_height">
+
+            <LinearLayout
+                style="@style/oritentation_horizontal"
+                android:layout_weight="0.94"
+                android:orientation="horizontal"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:src="@drawable/ic_location_stars"/>
+                <TextView
+                    android:id="@+id/txtLocationText1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:textColor="#00B8E3"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/calendar_model_day_text_size"
+                    android:gravity="center|left"
+                    android:text="Lima Convention Center"/>
+                <ImageView
+                    android:id="@+id/imgDayActive"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:src="@drawable/ic_location_arrow_bottom"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#999"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutLocationFloorsContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/calendar_model_day_height"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/viewLocationFloor1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/location_floors_text_size"
+                android:text="2nd Floor"/>
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#999"/>
+            <TextView
+                android:id="@+id/viewLocationFloor2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/location_floors_text_size"
+                android:text="4th Floor"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#999"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/calendar_model_day_height"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/viewLocationFloor3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/location_floors_text_size"
+                android:text="5th Floor"/>
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#999"/>
+            <TextView
+                android:id="@+id/viewLocationFloor4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/location_floors_text_size"
+                android:text="7th Floor"/>
+        </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#999"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/calendar_model_day_height"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/viewLocationFloor5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/location_floors_text_size"
+                android:text="8th Floor"/>
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#999"/>
+            <TextView
+                android:visibility="invisible"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#999"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutLocationEvents"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/calendar_model_day_height">
+
+            <LinearLayout
+                style="@style/oritentation_horizontal"
+                android:layout_weight="0.94"
+                android:orientation="horizontal"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:src="@drawable/ic_location_agenda"/>
+                <TextView
+                    android:id="@+id/txtLocationText2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:textColor="#00B8E3"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/calendar_model_day_text_size"
+                    android:gravity="center|left"
+                    android:text="Evening Events"/>
+                <ImageView android:visibility="invisible"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#999"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutLocationHotels"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/calendar_model_day_height">
+
+            <LinearLayout
+                style="@style/oritentation_horizontal"
+                android:layout_weight="0.94"
+                android:orientation="horizontal"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:src="@drawable/ic_location_hotel"/>
+                <TextView
+                    android:id="@+id/txtLocationText3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:textColor="#00B8E3"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/calendar_model_day_text_size"
+                    android:gravity="center|left"
+                    android:text="Official Hotels"/>
+                <ImageView android:visibility="invisible"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#999"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutParentLocation"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:id="@+id/layoutLocationMap"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <fragment
+                class="com.google.android.gms.maps.MapFragment"
+                android:id="@+id/fragmentLocationtMap"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <iosco.app.utils.TouchImageView
+            android:visibility="gone"
+            android:id="@+id/imgLocationMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <ProgressBar
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBarLocation"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

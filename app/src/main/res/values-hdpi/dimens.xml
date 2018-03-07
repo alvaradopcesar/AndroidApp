@@ -1,0 +1,137 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="text_size_1">17sp</dimen>
+    <dimen name="text_size_2">15sp</dimen>
+    <dimen name="border_draw">0.5dp</dimen>
+
+    <dimen name="size_menu_icon">30dp</dimen>
+    <dimen name="size_menu_pading">4dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    // login
+
+    <dimen name="login_text_size">15sp</dimen>
+    <dimen name="login_text_forgot">16sp</dimen>
+    <dimen name="login_text_singin">19sp</dimen>
+
+    // action bar
+
+    <dimen name="action_bar_text_iosco">25sp</dimen>
+    <dimen name="action_bar_text_line">16sp</dimen>
+    <dimen name="action_bar_text_multiline">13sp</dimen>
+
+    // content drawer
+
+    <dimen name="drawer_menu_text_size">15sp</dimen>
+    <dimen name="drawer_menu_item_height">30dp</dimen>
+    <dimen name="drawer_profile_height">230dp</dimen>
+    <dimen name="drawer_profile_text_size">15sp</dimen>
+    <dimen name="drawer_width">300dp</dimen>
+
+    // calendar
+
+    <dimen name="calendar_model_day_height">40dp</dimen>
+    <dimen name="calendar_model_day_text_size">14sp</dimen>
+    <dimen name="calendar_model_daydetail_height">35dp</dimen>
+    <dimen name="calendar_model_daydetail_time_size">15sp</dimen>
+    <dimen name="calendar_model_daydetail_name_size">15sp</dimen>
+
+    // calendar detail
+
+    <dimen name="calendar_detail_title">16sp</dimen>
+    <dimen name="calendar_detail_text">15sp</dimen>
+    <dimen name="calendar_detail_note_pading">7dp</dimen>
+
+    // speaker
+
+    <dimen name="speaker_model_head_height">40dp</dimen>
+    <dimen name="spaaker_model_head_text_size">15sp</dimen>
+    <dimen name="speaker_modeldetail_height">80dp</dimen>
+    <dimen name="speaker_modeldetail_name_size">15sp</dimen>
+    <dimen name="speaker_modeldetail_position_size">10sp</dimen>
+    <dimen name="speaker_modeldetail_photo_size">60dp</dimen>
+
+    <dimen name="index_letter_size">8sp</dimen>
+
+    // speaker detail
+
+    <dimen name="speaker_detail_photo_size">110dp</dimen>
+    <dimen name="speaker_detail_text1">16sp</dimen>
+    <dimen name="speaker_detail_text2">19sp</dimen>
+    <dimen name="speaker_detail_text3">15sp</dimen>
+    <dimen name="speaker_detail_point_size">10dp</dimen>
+    <dimen name="speaker_detail_event_text1">15sp</dimen>
+    <dimen name="speaker_detail_event_text2">14sp</dimen>
+    <dimen name="speaker_detail_event_height">35dp</dimen>
+    <dimen name="speaker_detail_botonera">90dp</dimen>
+
+    // Attendees
+
+    <dimen name="att_model_head_height">40dp</dimen>
+    <dimen name="att_model_head_text_size">15sp</dimen>
+    <dimen name="att_model_modeldetail_height">80dp</dimen>
+    <dimen name="att_model_modeldetail_name_size">15sp</dimen>
+    <dimen name="att_model_modeldetail_photo_size">60dp</dimen>
+    <dimen name="att_model_modeldetail_position_size">10sp</dimen>
+
+    // Search
+
+    <dimen name="search_height">50dp</dimen>
+    <dimen name="search_text_size">17sp</dimen>
+
+    // Evening Events
+
+    <dimen name="evening_model_hour_height">40dp</dimen>
+    <dimen name="evening_model_hour_text_size">14sp</dimen>
+    <dimen name="evening_model_detail_height">60dp</dimen>
+    <dimen name="evening_model_detail_name_size">15sp</dimen>
+    <dimen name="evening_model_clock_padding">8dp</dimen>
+    <dimen name="evening_model_point_size">30dp</dimen>
+
+    // Profile
+
+    <dimen name="profile_head_size">16sp</dimen>
+    <dimen name="profile_text_size">13sp</dimen>
+    <dimen name="profile_head2_size">14sp</dimen>
+    <dimen name="profile_text2_size">13sp</dimen>
+
+    // Abous us
+
+    <dimen name="about_menu_height">40dp</dimen>
+    <dimen name="about_menu_text_size">15sp</dimen>
+    <dimen name="about_menu_text2_size">13sp</dimen>
+    <dimen name="about_menu_border_height">15dp</dimen>
+    <dimen name="about_content_head_height">60dp</dimen>
+    <dimen name="about_content_text1_size">12sp</dimen>
+    <dimen name="about_content_text2_size">17sp</dimen>
+    <dimen name="about_content_border_height">20dp</dimen>
+
+    // Location
+    <dimen name="location_floors_text_size">16sp</dimen>
+
+    // Notes
+
+    <dimen name="note_save_text_size">13sp</dimen>
+    <dimen name="note_save_icon_height">30dp</dimen>
+    <dimen name="note_save_edit_size">16sp</dimen>
+
+    // Survey
+
+    <dimen name="survey_coment_text_size">12sp</dimen>
+    <dimen name="survey_subcontainer_height">30dp</dimen>
+    <dimen name="survey_subcontainer_height2">35dp</dimen>
+    <dimen name="survey_star_padding">5dp</dimen>
+    <dimen name="survey_text2_size">12sp</dimen>
+
+    // Dialog Ask Event
+
+    <dimen name="dialog_event_text1_size">20sp</dimen>
+    <dimen name="dialog_event_text2_size">17sp</dimen>
+    <dimen name="dialog_event_text3_size">17sp</dimen>
+    <dimen name="dialog_event_padding">20dp</dimen>
+    <dimen name="dialog_event_button_height">37dp</dimen>
+</resources>

@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="iosco.app.fragment.AboutContentFragment"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.03"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.96"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/about_content_head_height"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:scaleType="fitStart"
+                android:src="@drawable/logo_iosco"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"/>
+            <TextView
+                android:id="@+id/about_detail_text1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#800088"
+                android:textSize="@dimen/about_content_text1_size"
+                android:text="INTERNATIONAL ORGANIZATION OF SECURITIES COMMISSIONS (IOSCO)"/>
+        </LinearLayout>
+
+
+        <WebView
+            android:id="@+id/wv_content_2"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </WebView>
+<!--
+        <TextView
+            android:id="@+id/about_detail_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/about_content_border_height"
+            android:textColor="#666"
+            android:textSize="@dimen/about_content_text2_size"
+            android:text="The International Organization of Securities Commissions (IOSCO) is the international body that brings together the world's securities regulators and is recognized as the global standard setter for the securities sector. IOSCO develops, implements, and promotes adherence to internationally recognized standards for securities regulation. IOSCO was established in 1983. Its membership regulates more than 95% of the world's securities markets in more than 115 jurisdictions; securities regulators in emerging markets account for 75% of its ordinary membership."/>
+-->
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.03"/>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">IOSCO</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">IOSCO</string>
+
+    <!-- LoginActivity -->
+
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="insert_your_code">Registration code</string>
+    <string name="e_mail">E-mail</string>
+    <string name="title_activity_forget">ForgetActivity</string>
+
+    <!-- ForgetActivity -->
+    
+    <string name="text_forget_password">Enter the email address associated with
+        us and we send your code to your mail</string>
+    <string name="send">Send</string>
+
+    <!-- MenuDrawer -->
+    <string name="calendar">Conference Agenda</string>
+    <string name="exhibitors">Speakers</string>
+    <string name="assistants">Attendees</string>
+    <string name="evening_events">Evening Events</string>
+    <string name="locations">Locations</string>
+    <string name="profile">Profile</string>
+    <string name="about_us">About us</string>
+    <string name="survey">Survey</string>
+    <string name="notes">Notes</string>
+    <string name="log_out">Log Out</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="about_us_text">At the roundtable discussion with leading global maket analyst, the GEM Committee discussed current global financial risks including the implications of declining economic growth and divergent monetary policies including uncertainties in the US Fed\'s interest rate path, slowdown of the Chinese economy, decline in commodity prices, enhanced market volatility and their efects on emerging markets. Discussions also focused on the factors underlying some tight liquidity conditions and pressures on emerging markets corporate debt exposure, particularly given rising US dollar and interest rates.</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_main_activity_new">IOSCO</string>
+    <string name="title_activity_location_detail">LocationDetailActivity</string>
+
+
+    <string name="about_us_content3">
+        <![CDATA[
+        <html>
+ <head></head>
+
+ <body style="text-align:justify;color:gray;">
+
+<img src="logo_perfil.png">
+<p>
+The SMV is delighted to be hosting the 41st Annual Conference of the International Organization of Securities Commissions (IOSCO), taking place from
+Sunday, May 8, 2016 to Thursday, May 12, 2016 in Lima, Peru.
+ </p>
+<p>This is a great opportunity to: </p>
+<ul>
+ <li>Network with more than 800 representatives of the global securities market industry coming from around the world to Lima, Peru.</li>
+ <li>Interact and share experiences with experts in the securities market industry, and establish business relationships.</li>
+ <li>Engage in high-level discussions on the latest trends in the global securities and futures markets and the challenges they pose for
+regulators.</li>
+ </ul>
+ </body>
+</html>]]>
+    </string>
+
+</resources>

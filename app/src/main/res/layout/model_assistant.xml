@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/att_model_modeldetail_height"
+    android:background="#fff">
+
+    <ImageView
+        android:layout_width="@dimen/att_model_modeldetail_photo_size"
+        android:layout_height="@dimen/att_model_modeldetail_photo_size"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/AssistantPhoto"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_speaker_perfil" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/AssistantPhoto"
+        android:layout_toEndOf="@+id/AssistantPhoto">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txtAssistantName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#6F6652"
+                android:textSize="@dimen/att_model_modeldetail_name_size"
+                android:text="Amon"/>
+            <TextView
+                android:id="@+id/txtAssistantLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#6F6652"
+                android:textSize="@dimen/att_model_modeldetail_name_size"
+                android:text=""/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtAssistantCargo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00B8E3"
+            android:textSize="@dimen/att_model_modeldetail_position_size"
+            android:text="BBC NEWS"/>
+        <TextView
+            android:id="@+id/txtAssistantPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00B8E3"
+            android:textSize="@dimen/att_model_modeldetail_position_size"
+            android:text="BBC NEWS"/>
+        <TextView
+            android:id="@+id/txtAssistantJurisdiction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00B8E3"
+            android:textSize="@dimen/att_model_modeldetail_position_size"
+            android:text="BBC NEWS"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewAssistantLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#C0C0C0"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

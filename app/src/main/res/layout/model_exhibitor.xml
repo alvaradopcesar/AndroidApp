@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/speaker_modeldetail_height"
+    android:background="#fff">
+
+    <ImageView
+        android:layout_width="@dimen/speaker_modeldetail_photo_size"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/exhibitorPhoto"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_speaker_perfil"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/exhibitorPhoto"
+        android:layout_toEndOf="@+id/exhibitorPhoto">
+
+        <TextView
+            android:id="@+id/txtExhibitorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/speaker_modeldetail_name_size"
+            android:text="Amon Allardice"
+            android:textColor="#535353"/>
+        <TextView
+            android:id="@+id/txtExhibitorPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/speaker_modeldetail_position_size"
+            android:textColor="#B80088"
+            android:text="BBC NEWS"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="20sp"
+        android:id="@+id/imageView4"
+        android:src="@drawable/ic_speaker_arrrow_rigth"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <View
+        android:id="@+id/viewExhibitorLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#BEBEBE"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

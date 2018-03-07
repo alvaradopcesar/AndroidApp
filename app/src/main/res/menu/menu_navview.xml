@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_seccion_1"
+            android:icon="@mipmap/ic_launcher"
+            android:title="@string/calendar"/>
+        <item
+            android:id="@+id/menu_seccion_2"
+            android:icon="@mipmap/ic_launcher"
+            android:title="@string/exhibitors"/>
+        <item
+            android:id="@+id/menu_seccion_3"
+            android:icon="@mipmap/ic_launcher"
+            android:title="@string/assistants"/>
+        <item
+            android:id="@+id/menu_seccion_4"
+            android:icon="@mipmap/ic_launcher"
+            android:title="@string/locations"/>
+        <item
+            android:id="@+id/menu_seccion_5"
+            android:icon="@mipmap/ic_launcher"
+            android:title="@string/profile"/>
+        <item
+            android:id="@+id/menu_seccion_6"
+            android:icon="@mipmap/ic_launcher"
+            android:title="@string/about_us"/>
+        <item
+            android:id="@+id/menu_seccion_7"
+            android:icon="@mipmap/ic_launcher"
+            android:title="@string/log_out"/>
+    </group>
+</menu>

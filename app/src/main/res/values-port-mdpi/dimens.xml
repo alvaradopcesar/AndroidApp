@@ -1,0 +1,4 @@
+<resources>
+    // action bar
+    <dimen name="action_bar_home_icon_padding">40dp</dimen>
+</resources>
