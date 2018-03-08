@@ -24,7 +24,9 @@ import retrofit2.Retrofit;
  * Created by usuario on 16/02/2016.
  */
 public class ApiImplementation {
-    private static String baseUrl = "http://www.iosco2016lima.pe:96/";
+//    private static String baseUrl = "http://www.iosco2016lima.pe:96/";
+    private static String baseUrl = "http://181.65.157.206:96/";
+
 
     public static String getBaseUrl(){
         return baseUrl;
